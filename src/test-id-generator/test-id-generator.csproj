@@ -6,6 +6,16 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
+    <IsPackable>true</IsPackable>
+    
+    <PackageId>TestIdGenerator</PackageId>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+
+    <Authors>Grzegorz Bułat</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageVersion>$(VersionSuffix)</PackageVersion>
+    <Description>Test Id Generator is a library that allows you to generate deterministic random identifiers for your tests.</Description>
+    <PackageProjectUrl>https://github.com/bulatgrzegorz/test-id-generator</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
