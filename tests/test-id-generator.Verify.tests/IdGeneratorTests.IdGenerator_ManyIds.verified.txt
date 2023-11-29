@@ -1,0 +1,15 @@
+﻿{
+  ints: [
+    1917164940,
+    684320257,
+    592719545
+  ],
+  strings: [
+    BmutZw304j2D1HB6,
+    pZKqeTKXJIjzGeDh,
+    SuH9HjEtON2EFzv2,
+    t40CsdmRMHUqmDDY,
+    QTUF0CxgurLA3frj,
+    mrfMfbYOh1vazogk
+  ]
+}
