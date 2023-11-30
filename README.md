@@ -2,6 +2,13 @@
 
 It's a library that allows you to generate deterministic random identifiers for your tests.
 
+## Installing
+
+Install [TestIdGenerator](https://www.nuget.org/packages/TestIdGenerator) nuget package in your desired test project:
+```cmd
+dotnet add package TestIdGenerator --version 0.0.1
+```
+
 ## Motivation
 Motivation for this library was to make snapshot tests easier when need of usage random values.
 
