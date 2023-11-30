@@ -14,7 +14,7 @@ public Task CreatedEntity_WillBePosibleToBeQueriedAfter()
   var entity = new Entity(id);
   Api.Create(entity);
 
-  var apiResponse = Api.GetEnityById(id);
+  var apiResponse = Api.GetEntityById(id);
   return Verify(apiResponse);
 }
 ```
@@ -31,3 +31,9 @@ How we could do better is using TestIdGenerator:
 - var id = Random.Shared.Next();
 + var id = IdGenerator.GetId();
 ```
+
+Using it, `id` will be generated randomly but same each time for this test. Thanks to it, we can verify our entity object with used identifier in it, without need to ignore enything.
+
+# Internals
+
+`IdGenerator` is using runtime attributes [CallerFilePath](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.compilerservices.callerfilepathattribute?view=net-8.0) and [CallerMemberName](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.compilerservices.callermembernameattribute?view=net-8.0)
